@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Grocery Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <h1>SuperMart</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="nav-buttons">
+                <a href="#" class="account"><i class="fas fa-user"></i> Account</a>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span></a>
+            </div>
+
+            <div class="login-modal" id="loginModal">
+                <div class="login-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <button type="submit">Login</button>
+                    </form>
+                    <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Fresh Groceries Delivered</h2>
+                <p>Shop from our wide range of products</p>
+                <a href="#" class="cta-button" id="shopNowBtn">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Categories Sections -->
+        <section id="general" class="product-section">
+            <h2>General Items</h2>
+            <div class="product-grid">
+                <!-- Product cards will be added here via JavaScript -->
+            </div>
+        </section>
+
+        <section id="pooja" class="product-section">
+            <h2>Pooja Items</h2>
+            <div class="product-grid">
+                <!-- Product cards will be added here via JavaScript -->
+            </div>
+        </section>
+
+        <section id="kirana" class="product-section">
+            <h2>Kirana Items</h2>
+
+            <div class="product-grid">
+                <!-- Product cards will be added here via JavaScript -->
+            </div>
+        </section>
+
+        <section id="stationary" class="product-section">
+            <h2>Stationary Items</h2>
+            <div class="product-grid">
+                <!-- Product cards will be added here via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@grocery.com</p>
+                <p>Phone: +91 1234567890</p>
+                <p>Address: 123 Market Street, City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SuperMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
